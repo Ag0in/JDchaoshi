@@ -1,0 +1,33 @@
+
+$fontSize: 14px;
+body {
+  font-size: $fontSize;
+  background-color: white;
+}
+#top-warp {
+  height: 28px;
+  background-color: #e3e4e6;
+  margin: 0 auto;
+  .top {
+    width: 1072px;
+    height: 28px;
+
+    .fl {
+      float: left;
+    }
+    .fr {
+      width: 612px;
+      float: right;
+   
+     li {
+      float: left;
+    }
+    }
+  }
+}
+
+#header .tu {
+  width: 1072px;
+  height: 72px;
+  margin: 0 auto;
+}

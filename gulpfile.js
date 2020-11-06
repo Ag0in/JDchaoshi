@@ -36,7 +36,7 @@ gulp.task("hello1", done => {
 gulp.task("html", done => {
 
     gulp.src("*.html")
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("dist/html"))
     .pipe(connect.reload());
     done();
 });

@@ -1,0 +1,79 @@
+{
+  "id": "2186199",
+  "name": "JDchao'shi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "436378",
+      "name": "首页",
+      "font_class": "51",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "554357",
+      "name": "购物车",
+      "font_class": "iconset0308",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "3864136",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "6025669",
+      "name": "图标_包邮",
+      "font_class": "tubiao_baoyou",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7173588",
+      "name": "位置",
+      "font_class": "zb",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "7998698",
+      "name": "快",
+      "font_class": "kuai",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "8351809",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "13614087",
+      "name": "下",
+      "font_class": "xia",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "14463289",
+      "name": "省",
+      "font_class": "sheng",
+      "unicode": "e760",
+      "unicode_decimal": 59232
+    },
+    {
+      "icon_id": "16853992",
+      "name": "正品",
+      "font_class": "zhengpin",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    }
+  ]
+}

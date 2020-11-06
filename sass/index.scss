@@ -1,5 +1,6 @@
-
+@import "rest.scss";
 $fontSize: 14px;
+$width: 1072px;
 body {
   font-size: $fontSize;
   background-color: white;
@@ -9,25 +10,136 @@ body {
   background-color: #e3e4e6;
   margin: 0 auto;
   .top {
-    width: 1072px;
+    width: $width;
     height: 28px;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
 
     .fl {
       float: left;
+      i {
+        font-size: 20px;
+        color: yellow;
+      }
+      a {
+        text-align: center;
+        line-height: 28px;
+        font-size: 12px;
+      }
     }
     .fr {
-      width: 612px;
+      // width: 612px;
       float: right;
-   
-     li {
-      float: left;
-    }
+      border: 1px solid red;
+      li {
+        float: left;
+        text-align: center;
+        line-height: 28px;
+        a {
+          margin-right: 10px;
+          font-size: 12px;
+        }
+      }
+      .spacer {
+        font-size: 14px;
+      }
+      .fore2 {
+        margin-left: 10px;
+        .dt {
+          a:hover {
+            color: red;
+            i {
+              font-size: 20px;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+      .fore3 {
+        margin-left: 10px;
+        .dt {
+          a:hover {
+            color: red;
+          }
+        }
+      }
     }
   }
 }
+/* #header{
+  width: $width;
+  height: 104px;
+  margin: 0 auto;
+  border:1px solid red;
+  .left{
+    width: 190px;height: 104px;
+    .logo{
+      height: 80px;
+      background-image: url(../img/logo.png);
+      background-repeat: no-repeat;
+      background-position:-10px 26px ;
+    }
+    .title{
+      width: 164px;
 
-#header .tu {
-  width: 1072px;
-  height: 72px;
+    }
+  }
+} */
+
+#floorNav {
+  /* display: none; */
+  width: $width;
+  position: fixed;
+  top: 100px;
+  left: 300px;
+  width: 32px;
+  border: 1px solid #cecece;
+  li {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-bottom: 1px solid #cecece;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+    span {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background: red;
+      color: white;
+    }
+  }
+  li.hover span {
+    display: block;
+  }
+  li:last-child {
+    background: red;
+    color: white;
+    border-bottom: none;
+  }
+}
+
+#content {
+  li {
+    width: $width;
+    height: 600px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 600px;
+    margin:0 auto;
+  }
+}
+/* #header,
+#footer {
+  width: 1000px;
+  height: 1000px;
+  background: darkgoldenrod;
   margin: 0 auto;
 }
+
+#content {}
+ */

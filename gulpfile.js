@@ -41,6 +41,7 @@ gulp.task("html", done => {
     done();
 });
 
+
 //拷贝同种类型的文件
 /* gulp.task("copyImg", done => {
 
@@ -68,6 +69,13 @@ gulp.task("html", done => {
     done();
 
 }) */
+
+gulp.task("fonts", done => {
+
+    gulp.src("fonts/**").pipe(gulp.dest("dist/fonts"));
+
+    done();
+})
 //将不同目录里的文件拷贝到同一目录下
 /* gulp.task("copy", done => {
 
@@ -82,6 +90,7 @@ gulp.task("html", done => {
 gulp.task("watch", done => {
     gulp.watch("*.html", gulp.series("html"));
     gulp.watch("sass/*.scss", gulp.series("sass"));
+   // gulp.watch("fonts/**", gulp.series("fonts"));
 
     done();
 })

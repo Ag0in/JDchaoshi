@@ -1,3 +1,4 @@
+/* 样式重置 */
 html,body,div,p,h1,h2,h3,h4,h5,h6,fieldset,legend,input,table,ul,ol,dl,dt,dd,li,figure,figcaption,nav,article,menu,hr{
     margin: 0;
     padding: 0;
@@ -12,6 +13,28 @@ a{
 img{
     vertical-align: middle;
 }
+input,textarea{
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+}
+em,i,address{
+    font-style: normal;
+}
+fieldset,img{
+    border: 0;
+}
+
+.clean{
+    content:0;
+    display:block;
+    clear:both;
+   overflow: hidden;
+}
 .flt{float: left;}
 .frt{float: right;}
-
+body{
+    font-family: "微软雅黑";
+    background-color: #e3e4e6;
+}

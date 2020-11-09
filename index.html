@@ -5,131 +5,984 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/rest.css">
     <link rel="stylesheet" href="../fonts/iconfont.css" />
-    <script src="..js/jquery-1.11.0.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
+    <script src="../js/swiper-bundle.js"></script>
+    <script src="../js/jquery-1.11.0.js"></script>
   </head>
   <body>
-    <div id="top-warp">
-      <div class="top">
-        <ul class="fl">
-          <li>
-            <i class="iconfont icon-51"></i>
-            <a href="http//www.jd.com">京东首页</a>
-          </li>
-        </ul>
-        <ul class="fr">
-          <li class="fore1" id="ttbar-login">
-            <a href="javascript;">你好，请登录</a>
-            <a href="javascript;" style="color: red">免费注册</a>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a href="login.html">我的订单</a>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore3 dorpdown" id="ttbar-myjd" data-load="1">
-            <div class="dt cw-icon">
-              <a href="index.html">我的京东</a>
-              <i>q</i>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a href="#">京东会员</a>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a target="_blank" href="#">企业采购</a>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a target="_blank" href="#">客服服务</a>
-              <i>q</i>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a target="_blank" href="#">网站导航</a>
-              <i>q</i>
-            </div>
-          </li>
-          <li class="spacer">|</li>
-          <li class="fore2">
-            <div class="dt">
-              <a href="#">手机京东</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <div id="top_warp">
+      <ul class="top_warp_l">
+        <li>
+          <a href="#"><i class="iconfont"></i>京东首页</a>
+        </li>
+      </ul>
+      <ul class="top_warp_r">
+        <li class="fore1">
+          <a href="#">你好，请登录</a>
+          &nbsp;&nbsp;
+          <a href="#" style="color: red">免费注册</a>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore2">
+          <a href="#">我的订单</a>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore3">
+          <a href="#">我的京东</a>
+          <i class="iconfont icon-xia"></i>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore2">
+          <a href="#">京东会员</a>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore2">
+          <a href="#">企业采购</a>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore3">
+          <a href="#">客户服务</a>
+          <i class="iconfont icon-xia"></i>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore3">
+          <a href="#">网站导航</a>
+          <i class="iconfont icon-xia"></i>
+        </li>
+        <li class="spare">|</li>
+        <li class="fore2">
+          <a href="#">手机京东</a>
+        </li>
+      </ul>
     </div>
-    <div id="header">
-     <!--  <div class="left">
-        <h1 class="logo"></h1>
-        <div class="titie">
-          <i>q</i>
-          <p>河南</p>
-          <i>q</i>
+    <div id="top_header_warp">
+      <div id="top_header">
+        <div class="top_header_l">
+          <h1 class="top_header_logo"></h1>
         </div>
-      </div>
-      <div class="midle">
-        <div class="server">
-          <input type="text" value="食品" />
-          <ul>
-            <li>满199减100</li>
-            <li>健康守护</li>
-            <li>中外美酒</li>
-            <li>个人护理</li>
-            <li>纸品家清</li>
+        <div class="top_header_w">
+          <i class="iconfont icon-zb"></i>
+          <div class="top_header_z">
+            <p><i class="iconfont icon-xia"></i>河南</p>
+          </div>
+        </div>
+        <div class="top_header_seaver flt">
+          <input type="text" class="seaver" value="食品" /><input
+            type="button"
+            class="btn"
+            value="搜索"
+          />
+          <ul class="top_header_list flt">
+            <li><a href="#"></a>满减199减100</li>
+            <li><a href="#">健康守护</a></li>
+            <li><a href="#">中外美酒</a></li>
+            <li><a href="#">个人护理</a></li>
+            <li><a href="#">纸品家清</a></li>
           </ul>
         </div>
+        <div class="top_header_r flt">
+          <div class="top_header_che">
+            <p>我的购物车 <i class="iconfont icon-gouwuchekong"></i></p>
+          </div>
+          <div class="top_header_sao">
+            <p><i class="iconfont icon-erweima"></i>扫码享受优惠</p>
+          </div>
+        </div>
       </div>
-
-      <div class="right">
-        <div class="che">我的购物车<i>q</i></div>
-        <div class="sao"><i>q</i>扫码享受优惠</div>
-      </div> -->
     </div>
+
+   <!--  header -->
+
+   
     <div id="floorNav">
-      <ul>
-        <li>1F<span>服饰</span></li>
-        <li>2F<span>美妆</span></li>
-        <li>3F<span>手机</span></li>
-        <li>4F<span>家电</span></li>
-        <li>5F<span>数码</span></li>
-        <li>6F<span>运动</span></li>
-        <li>7F<span>居家</span></li>
-        <li>8F<span>母婴</span></li>
-        <li>9F<span>食品</span></li>
-        <li>10F<span>图书</span></li>
-        <li>11F<span>服务</span></li>
-        <li>TOP</li>
-      </ul>
-    </div> 
+            <ul>
+              <li>家庭量版<span>家庭量版</span></li>
+              <li>品牌特卖<span>品牌特卖</span></li>
+              <li>热卖商品<span>热卖商品</span></li>
+              <li>奶制品<span>奶制品</span></li>
+              <li>运动户外<span>运动户外</span></li>
+              <li>猜你喜欢<span>猜你喜欢</span></li>
+             <!--  <li>7F<span>居家</span></li>
+              <li>8F<span>母婴</span></li>
+              <li>9F<span>食品</span></li>
+              <li>10F<span>图书</span></li>
+              <li>11F<span>服务</span></li> -->
+              <li>TOP</li>
+            </ul>
+    </div>
+    <div id="header_warp">
+          <div class="header_menu frt">
+              <ul class="header_menu_list">
+                <li>
+                  <!--  <i class="iconfont icon-shouye_shugang_shijiantixing"></i> -->
+                  超市首页
+                </li>
+                <li>
+                  <i class="iconfont icon-shouye_shugang_shijiantixing"></i>
+                  超市首页
+                </li>
+                <li>
+                  <i class="iconfont icon-shouye_shugang_shijiantixing"></i>
+                  超市首页
+                </li>
+                <li>
+                  <i class="iconfont icon-shouye_shugang_shijiantixing"></i>
+                  超市首页
+                </li>
+                <li>
+                  <i class="iconfont icon-shouye_shugang_shijiantixing"></i>
+                  超市首页
+                </li>
+                <li>
+                  <i class="iconfont icon-shouye_shugang_shijiantixing"></i>
+                  超市首页
+                </li>
+              </ul>
+              <ul class="header_menu_ad frt">
+                <li>
+                  <i class="iconfont .icon-tubiao_baoyou"></i>
+                  <span class="header_menu_ad_txt">满99免运费</span>
+                </li>
+                <li>
+                  <i class="iconfont .icon-tubiao_baoyou"></i>
+                  <span class="header_menu_ad_txt">满99免运费</span>
+                </li>
+              </ul>
+          </div>
+          <div class="header_banner_wrap">
+            <div class="header_nav">
+              <div class="header_nav_title">京东超市频道分类</div>
+              <div class="item">
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+                <div class="item_header">
+                  <div class="item_decoration"></div>
+                  <h3 class="item_header_title">
+                    食品饮料
+                    <i>></i>
+                  </h3>
+                  <p class="item_header_sublinks">
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                    <a href="#">休闲食品</a>
+                  </p>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-container flt">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/lunbo-01.jpg" /></div>
+                <div class="swiper-slide">
+                  <img src="../img/lunbo-02.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/lunbo-03.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/lunbo-04.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/lunbo-05.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/lunbo-06.jpg" alt="" />
+                </div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+  
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+  
+              <!-- 如果需要滚动条 -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <ul class="banner_pic">
+              <li>
+                <img src="../img/tu.jpg" alt="" />
+              </li>
+              <li>
+                <img src="../img/tu2.png" alt="" />
+              </li>
+            </ul>
+            
+            <!-- <div class="header_banner_r clean">
+              <div class="frt">
+                <img src="../img/lue.png" alt="">
+              </div>
+            </div> -->
+          </div>
     <div id="content">
-      <ul>
-        <li style="background: #8B0000;">服饰</li>
-        <li style="background: #123;">美妆</li>
-        <li style="background: #667;">手机</li>
-        <li style="background: #558;">家电</li>
-        <li style="background: #900;">数码</li>
-        <li style="background: #456;">运动</li>
-        <li style="background: #789;">居家</li>
-        <li style="background: #234;">母婴</li>
-        <li style="background: #567;">食品</li>
-        <li style="background: #887;">图书</li>
-        <li style="background: #980;">服务</li>
+        <div class="main1">
+          <div class="main_title">超值量贩</div>
+          <ul class="main_list">
+            <li  style="margin-left: 0;">
+              <img src="../img/louti-1.jpg" alt="" class="">
+            <p>
+              <a href="#">  
+                徐福记 沙皇礼盒 沙琪玛礼盒<br>
+                整箱糕点心 新年年货礼盒零
+              </a>
+            </p>
+              <div class="main_btn">
+                <p><strong>最贩量：<span >￥42.90</span></strong><button><i class="iconfont icon-gouwuchekong"></i>加入购物车</button></p>
+              </div>
+            </li>
+            <li>
+              <img src="../img/louti-2.jpg" alt="" class="">
+            <p>
+              <a href="#">  
+                徐福记 沙皇礼盒 沙琪玛礼盒<br>
+                整箱糕点心 新年年货礼盒零
+              </a>
+            </p>
+              <div class="main_btn">
+                <p><strong>最贩量：<span >￥42.90</span></strong><button><i class="iconfont icon-gouwuchekong"></i>加入购物车</button></p>
+              </div>
+            </li>
+            <li>
+              <img src="../img/louti-3.jpg" alt="" class="">
+            <p>
+              <a href="#">  
+                徐福记 沙皇礼盒 沙琪玛礼盒<br>
+                整箱糕点心 新年年货礼盒零
+              </a>
+            </p>
+              <div class="main_btn">
+                <p><strong>最贩量:<span >￥42.90</span></strong><button><i class="iconfont icon-gouwuchekong"></i>加入购物车</button></p>
+              </div>
+            </li>
+          </ul>
+          </div>
+        <div class="main2">
+          <div class="main_title">品牌特卖</div>
+            <div class="main2_l flt">
+              <img src="../img/louti3-tou.jpg" alt="">
+            </div>
+            <div class="main2_r ">
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main3">
+          <div class="main_title">奶制品</div>
+            <div class="main2_l flt">
+              <img src="../img/louti3-tou.jpg" alt="">
+            </div>
+            <div class="main2_r ">
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main4">
+          <div class="main_title">奶制品</div>
+            <div class="main2_l flt">
+              <img src="../img/louti3-tou.jpg" alt="">
+            </div>
+            <div class="main2_r ">
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main5">
+          <div class="main_title">奶制品</div>
+            <div class="main2_l flt">
+              <img src="../img/louti3-tou.jpg" alt="">
+            </div>
+            <div class="main2_r ">
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main6">
+          <div class="main_title">奶制品</div>
+            <div class="main2_l flt">
+              <img src="../img/louti3-tou.jpg" alt="">
+            </div>
+            <div class="main2_r ">
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+            <ul class="main2_list">
+               <li>
+                 <img src="../img/louti3-01.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-02.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-06.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-04.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+               <li>
+                 <img src="../img/louti3-05.jpg" alt="">
+                 <p>
+                 <a href="#">
+                   蒙牛 纯牛奶 PURE MLLK<br>
+                   250ml*16礼盒装
+                 </a>
+                <i> ￥47.20</i>
+                </p>
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main7"style="background: #789;">猜你喜欢</div>
       </ul>
     </div>
     <div id="footer"></div>
-    
+    <script>
+      $(function () {
+        var flag = true;
+        $(window).scroll(function () {
+          if (flag) {
+            var st = $(this).scrollTop();
+            if (st >= 600) {
+              $("#floorNav").fadeIn();
+            } else {
+              $("#floorNav").fadeOut();
+            }
+  
+            $("#content div").each(function () {
+              if (st >= $(this).offset().top - $(this).outerHeight() / 2) {
+                var index = $(this).index();
+                $("#floorNav li").eq(index).addClass("hover").siblings().removeClass(
+                  "hover");
+              }
+            })
+          }
+        })
+        $("#floorNav li:not(:last)").click(function () {
+          flag = false;
+          $(this).addClass("hover").siblings().removeClass("hover");
+          var index = $(this).index();
+          $("html,body").animate({
+            "scrollTop": $("#content div").eq(index).offset().top
+          }, 600, function () {
+            flag = true;
+          });
+        })
+  
+        $("#floorNav li:last").click(function () {
+          $("html,body").animate({
+            "scrollTop": 0
+          }, 500);
+        })
+  
+      })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // 轮播图的方向，也可以是vertical方向
+          direction: "horizontal",
+
+          //循环模式选项
+          loop: true,
+
+          // 自动播放时间
+          autoplay: 2000,
+          // autoplayDisableOnInteraction : false,
+
+          // 播放的速度
+          speed: 1000,
+
+          // 如果需要分页器，即下面的小圆点
+          pagination: ".swiper-pagination",
+
+          // 如果需要前进后退按钮
+          nextButton: ".swiper-button-next",
+          prevButton: ".swiper-button-prev", // 这样，即使我们滑动之后， 定时器也不会被清除
+          // 如果需要滚动条
+          scrollbar: ".swiper-scrollbar",
+        });
+      };
+    </script>
   </body>
 </html>

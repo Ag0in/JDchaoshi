@@ -70,12 +70,12 @@ gulp.task("html", done => {
 
 }) */
 
-gulp.task("fonts", done => {
+/* */gulp.task("fonts", done => {
 
     gulp.src("fonts/**").pipe(gulp.dest("dist/fonts"));
 
     done();
-})
+}) 
 //将不同目录里的文件拷贝到同一目录下
 /* gulp.task("copy", done => {
 
